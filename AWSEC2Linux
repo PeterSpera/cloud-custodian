@@ -1,0 +1,10 @@
+# These are the steps that I used to install Cloud Custodian on an AWS Linux 2 EC2 instance (t2.micro)
+# From AWS Console, launched a Linux 2 EC2 instance. Took most defaults except the security group. 
+#     I used an existing security group that allows access from my local computer. 
+#     Went to www.whatismyip.com and allowed inbound traffic from the Public IPv4 address displayed at the site
+#     Be sure to create and capture the Access-Key and Secret-Access-Key key pair for the new instance (only have 1 shot at this).
+#     Fortunately I had an existing key pair so I used it. 
+# Downloaded PuTTy from Putty.org and setup a connection to the EC2 instance.  User ID "ec2-user@value of public DNS (IPv4)" as displayed from AWS Console.
+#     Connect to EC2 instance from putty
+# Now on Ec2 instance, issued the commands:
+#     
