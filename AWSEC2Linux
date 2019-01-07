@@ -6,5 +6,11 @@
 #     Fortunately I had an existing key pair so I used it. 
 # Downloaded PuTTy from Putty.org and setup a connection to the EC2 instance.  User ID "ec2-user@value of public DNS (IPv4)" as displayed from AWS Console.
 #     Connect to EC2 instance from putty
-# Now on Ec2 instance, issued the commands:
-#     
+# Now on Ec2 instance, issue the commands to upgrade to Python3.x, Virualenv3 and pip3:
+#     $ sudo yum clean all
+#     $ sudo yum update
+#     $ sudo yum install python36 python36-virtualenv python36-pip
+#   I had issue that python36-pip was not available.  Need to figure this out.
+# Next go to https://capitalone.io  and start the quick start session.
+#   Words of caution:
+#     1.  Custodian uses Lambda so 
